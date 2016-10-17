@@ -17,6 +17,14 @@ const getBreakfast = () => {
   return breakfastList
 }
 
+const addBreakfast = (name, price, sale) => {
+  const data = fs.readFileSync('breakfast.json')
+  const jsonData = JSON.parse(data)
+  jsonData.push({ name, price, sale })
+  fs.writeFileSync('breakfast.json', JSON.stringify(jsonData, null, 2))
+}
+
 export default {
-  getBreakfast
+  getBreakfast,
+  addBreakfast
 }
