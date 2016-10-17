@@ -1,0 +1,12 @@
+[
+  {
+    "name": "pancakes",
+    "price": 7.95,
+    "sale": false
+  },
+  {
+    "name": "eggs",
+    "price": 4.95,
+    "sale": true
+  }
+]
